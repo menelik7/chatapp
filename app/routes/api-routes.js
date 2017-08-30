@@ -11,10 +11,10 @@ var Message = require("../models/message.js");
 // =============================================================
 module.exports = function(app, io) {
 
-  // Get all chirps
+  // Get all messages
   app.get("/api/all", function(req, res) {
 
-    // Finding all Chirps, and then returning them to the user as JSON.
+    // Finding all messages, and then returning them to the user as JSON.
     // Sequelize queries are aynchronous, which helps with percieved speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
@@ -25,7 +25,7 @@ module.exports = function(app, io) {
 
   });
 
-  // Add a chirp
+  // Add a message
   app.post("/api/new", function(req, res) {
 
     console.log("Message Data:");
@@ -37,7 +37,7 @@ module.exports = function(app, io) {
       body: req.body.body,
       created_at: req.body.created_at
     }).then(function(results) {
-      // `results` here would be the newly created chirp
+      // `results` here would be the newly created message
       res.end();
     });
 

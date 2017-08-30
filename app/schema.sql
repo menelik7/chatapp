@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS `sequelize_chirpy`;
-CREATE DATABASE `sequelize_chirpy`;
+DROP DATABASE IF EXISTS `speakup_db`;
+CREATE DATABASE `speakup_db`;

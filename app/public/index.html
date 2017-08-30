@@ -30,44 +30,75 @@
 
       <div class="row" id="login">
         <div class="col-sm-8 col-sm-offset-2">
+          <p class="cool-font">USER LOGIN</p>
+          <input class="form-control" type="text" id="userName" placeholder="Username">
+          <br>
+          <input class="form-control" type="text" id="email" placeholder="Email">
+          <br>
+          <input class="form-control" type="password" id="password" placeholder="Password">
+          <br>
+          <input class="btn btn-lg pull-right" type="submit" value="LOGIN" id="login-submit">
+          <input class="btn btn-lg pull-right" type="submit" value="SIGNUP" id="signup">
+          <p></p>
+          <div id="reset-password">Reset Password?</div>
+          <br>
+        </div>
+      </div>
+
+      <div class="hide" id="reset-email">
+        <form id="form1">
+          <p id="login_label1">PASSWORD RESET</p>
+          <input type="text" placeholder="Enter email and check your inbox for instructions" id="reset-email-input">
+          <br>
+          <input type="submit" value="SUBMIT" id="submit">
+        </form>
+      </div>
+
+      <!-- <div class="row" id="login">
+        <div class="col-sm-8 col-sm-offset-2">
           <p class="cool-font">Sign-In</p>
           <input class="form-control" type="text" id="userName" placeholder="Enter Your userName">
           <input class="form-control" type="password" id="password" placeholder="Enter Your Password">
           <button id="login-submit" class="btn btn-lg pull-right">Login!</button>
           <br>
         </div>
-      </div>
+      </div> -->
 
-      <div class="row" id="chatroom">
+      <div class="row hide" id="chatroom">
         <div class="col-sm-8 col-sm-offset-2">
           <p class="cool-font" id="currentUser"></p>
-          <textarea class="form-control" rows="3" id="chirp-box" placeholder="Enter your thought Here!"></textarea>
-          <button id="chirp-submit" class="btn btn-lg pull-right">Submit!</button>
+          <button class="btn btn-warning" id="logout" type="submit">Logout</button>
+          <textarea class="form-control" rows="3" id="message-box" placeholder="Enter your thought Here!"></textarea>
+          <button id="message-submit" class="btn btn-lg pull-right">Submit!</button>
         </div>
         <div class="col-sm-8 col-sm-offset-2">
           <h2>Messages</h2>
           <hr>
           <div id="display">
             <h4 id="date"></h4>
-            <div id="chirp-area"></div>
+            <div id="message-area"></div>
           </div>
         </div>
       </div>
 
     </div>
 
-   <!--  <ul id="messages"></ul>
-    <form action="">
-      <input id="chirp-box" autocomplete="off" /><button id="submit">Send</button>
-    </form> -->
-
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBDC4AdSmZNKXa8bsvcrs17aa5Y9wgeQrM",
+        authDomain: "speakup-417a6.firebaseapp.com",
+        databaseURL: "https://speakup-417a6.firebaseio.com",
+        projectId: "speakup-417a6",
+        storageBucket: "",
+        messagingSenderId: "437103657714"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="js/message.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-    <!-- <script>
-
-    </script> -->
-  </body>
-</html>
+    
   </body>
 </html>

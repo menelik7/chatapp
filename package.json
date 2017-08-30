@@ -1,21 +1,33 @@
 {
-  "name": "chirpysequelize",
+  "name": "speakup",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "http": "0.0.0",
-    "mysql2": "^1.4.1",
-    "sequelize": "^4.7.5",
-    "socket.io": "^2.0.3"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "MT",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menelik7/chatapp.git"
+  },
+  "author": "Menelik Tefera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menelik7/chatapp/issues"
+  },
+  "homepage": "https://github.com/menelik7/chatapp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "http": "^0.0.0",
+    "io": "^0.1.10",
+    "mysql2": "^1.4.1",
+    "sequelize": "^4.7.5",
+    "socket.io": "^2.0.3"
+  },
+  "engines": {
+    "node": "v6.11.2",
+    "npm": "3.10.10"
+  }
 }

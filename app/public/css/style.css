@@ -1,4 +1,4 @@
-.chirp {
+.message {
   padding: 10px;
   margin: 10px;
   background-color: #e8f9ff;
@@ -34,4 +34,10 @@ textarea {
 p {
   margin: 0;
   font-size: 16px;
+}
+
+#reset-password {
+  background: #fff;
+  cursor: pointer;
+  margin-top: 20px;
 }
