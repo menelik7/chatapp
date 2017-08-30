@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Speak Yo Mind!</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Moment.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Speak Yo Mind!</h1>
+    </div>
+
+    <div class="container">
+
+      <div class="row" id="login">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="cool-font">Sign-In</p>
+          <input class="form-control" type="text" id="userName" placeholder="Enter Your userName">
+          <input class="form-control" type="password" id="password" placeholder="Enter Your Password">
+          <button id="login-submit" class="btn btn-lg pull-right">Login!</button>
+          <br>
+        </div>
+      </div>
+
+      <div class="row" id="chatroom">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="cool-font" id="currentUser"></p>
+          <textarea class="form-control" rows="3" id="chirp-box" placeholder="Enter your thought Here!"></textarea>
+          <button id="chirp-submit" class="btn btn-lg pull-right">Submit!</button>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2">
+          <h2>Messages</h2>
+          <hr>
+          <div id="display">
+            <h4 id="date"></h4>
+            <div id="chirp-area"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   <!--  <ul id="messages"></ul>
+    <form action="">
+      <input id="chirp-box" autocomplete="off" /><button id="submit">Send</button>
+    </form> -->
+
+    <script type="text/javascript" src="js/message.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- <script>
+
+    </script> -->
+  </body>
+</html>
+  </body>
+</html>

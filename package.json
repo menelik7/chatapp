@@ -1,0 +1,21 @@
+{
+  "name": "chirpysequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "http": "0.0.0",
+    "mysql2": "^1.4.1",
+    "sequelize": "^4.7.5",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "MT",
+  "license": "ISC"
+}
