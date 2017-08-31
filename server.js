@@ -3,9 +3,10 @@ var express = require('express');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var bodyParser = require('body-parser');
+var db = require("./app/models");
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/app/public/index.html');
+  res.sendFile(__dirname + '/models/index');
 });
 
 // Sets up the Express app to handle data parsing
