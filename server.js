@@ -29,6 +29,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Routes
 // =============================================================
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){

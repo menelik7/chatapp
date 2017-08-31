@@ -124,15 +124,16 @@ $(document).ready(function() {
       $.get("/api/all", function(data) {
         if (data.length !== 0) {
           for (var i = 0; i < data.length; i++) {
-            var currentIndex = i;
-          }
-          if(currentIndex > scale){
-            scale = currentIndex;
-            row.append("<p><strong><span style='color:#ff0000'>" + data[currentIndex].author + "</span></strong>  " + moment(data[currentIndex].created_at).format("h:mma") +"</p>");
+            // var currentIndex = i;
+          // }
+          // if(currentIndex > scale){
+          //   scale = currentIndex;
+            row.append("<p><strong><span style='color:#ff0000'>" + data[i].author + "</span></strong>  " + moment(data[i].created_at).format("h:mma") +"</p>");
             row.append("<p>" + msg + "</p>");
+            $("#message-area").prepend(row);
           }
         }
-        $("#message-area").prepend(row);
+        
       });
     });
   });
