@@ -7,7 +7,7 @@
 .cool-font {
     font-family: Shrikhand, cursive;
     font-size: 24px;
-    color: #1da1f2;
+    color: #ffffff;
 }
 
 .jumbotron {
@@ -97,4 +97,67 @@ p {
 
 #date {
     text-align: center;
+}
+
+.header {
+    position: absolute;
+    top: 20%;
+    Left: 10%;
+    z-index: 1;
+    font-family: 'Raleway', sans-serif;
+    /* color: #6666ff; */
+    /* color: #ffffff; */
+    color: #ff6868;
+    text-shadow: 2px, 3px white;
+}
+
+.the-input {
+    background: #ff6868;
+}
+
+.typewriter {
+    position: absolute;
+    z-index: 0;
+    /* top: 85%;
+        left: 10%;*/
+    color: #ff6868;
+}
+
+.typewriter h4 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #ff6868;
+    }
 }

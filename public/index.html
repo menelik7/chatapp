@@ -61,37 +61,40 @@
                 </div>
             </div>
         </div>
-        <div class="container">
 
-            <div class="row hide" id="login">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <form id="form1">
-                        <p class="cool-font">USER LOGIN</p>
-                        <input class="form-control" type="text" id="userName" placeholder="Username">
+        <!-- <img id="background-image" src="img/city.jpeg" alt="working"> -->
+        <div class="the-input">
+            <div class="container">
+
+                <div class="row hide" id="login">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <form id="form1">
+                            <p class="cool-font">USER LOGIN</p>
+                            <input class="form-control" type="text" id="userName" placeholder="Username">
+                            <br>
+                            <input class="form-control" type="text" id="email" placeholder="Email">
+                            <br>
+                            <input class="form-control" type="password" id="password" placeholder="Password">
+                            <br>
+                            <input class="btn btn-lg pull-right" type="submit" value="LOGIN" id="login-submit">
+                            <input class="btn btn-lg pull-right" type="submit" value="SIGNUP" id="signup">
+                            <p></p>
+                            <div id="reset-password">Reset Password?</div>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="hide" id="reset-email">
+                    <form id="form-x">
+                        <p id="login_label1">PASSWORD RESET</p>
+                        <input type="text" placeholder="Enter email and check your inbox for instructions" id="reset-email-input">
                         <br>
-                        <input class="form-control" type="text" id="email" placeholder="Email">
-                        <br>
-                        <input class="form-control" type="password" id="password" placeholder="Password">
-                        <br>
-                        <input class="btn btn-lg pull-right" type="submit" value="LOGIN" id="login-submit">
-                        <input class="btn btn-lg pull-right" type="submit" value="SIGNUP" id="signup">
-                        <p></p>
-                        <div id="reset-password">Reset Password?</div>
-                        <br>
+                        <input type="submit" value="SUBMIT" id="submit">
                     </form>
                 </div>
-            </div>
 
-            <div class="hide" id="reset-email">
-                <form id="form-x">
-                    <p id="login_label1">PASSWORD RESET</p>
-                    <input type="text" placeholder="Enter email and check your inbox for instructions" id="reset-email-input">
-                    <br>
-                    <input type="submit" value="SUBMIT" id="submit">
-                </form>
-            </div>
-
-            <!-- <div class="row" id="login">
+                <!-- <div class="row" id="login">
         <div class="col-sm-8 col-sm-offset-2">
           <p class="cool-font">Sign-In</p>
           <input class="form-control" type="text" id="userName" placeholder="Enter Your userName">
@@ -101,27 +104,27 @@
         </div>
       </div> -->
 
-            <div class="row hide" id="chatroom">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <p class="cool-font" id="currentUser">
-                        </script>
-                    </p>
-                    <button class="btn btn-warning" id="logout" type="submit">Logout</button>
-                    <textarea class="form-control" rows="3" id="message-box" placeholder="Enter your thought Here!" required></textarea>
-                    <button id="message-submit" class="btn btn-success pull-right">Submit!</button>
-                </div>
-                <div class="col-sm-8 col-sm-offset-2">
-                    <h2>Town Center</h2>
-                    <hr>
-                    <div id="display">
-                        <h4 id="date"></h4>
-                        <div id="message-area"></div>
+                <div class="row hide" id="chatroom">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <p class="cool-font" id="currentUser">
+                            </script>
+                        </p>
+                        <button class="btn btn-warning" id="logout" type="submit">Logout</button>
+                        <textarea class="form-control" rows="3" id="message-box" placeholder="Enter your thought Here!" required></textarea>
+                        <button id="message-submit" class="btn btn-success pull-right">Submit!</button>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h2>Town Center</h2>
+                        <hr>
+                        <div id="display">
+                            <h4 id="date"></h4>
+                            <div id="message-area"></div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-
         <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
         <script>
             // Initialize Firebase
