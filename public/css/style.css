@@ -1,47 +1,100 @@
 .message {
-  padding: 10px;
-  margin: 10px;
-  background-color: #e8f9ff;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e8f9ff;
 }
 
 .cool-font {
-  font-family: Shrikhand, cursive;
-  font-size: 24px;
-  color: #1da1f2;
+    font-family: Shrikhand, cursive;
+    font-size: 24px;
+    color: #1da1f2;
 }
 
 .jumbotron {
-  font-family: Shrikhand, cursive;
-  color: white;
-  background-color: #1da1f2;
+    font-family: Shrikhand, cursive;
+    color: white;
+    background-color: #1da1f2;
 }
 
 input,
 textarea {
-  margin: 20px;
+    margin: 20px;
+}
+
+.icons {
+    text-align: center;
+    width: 375px;
+    height: 375px;
+    z-index: 1;
+    background: #ee6e73;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.about {
+    background: rgba(220, 220, 220, 0.75);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    /* background:#ffffff; */
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 475px;
+    z-index: 1;
+}
+
+.techIcon {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#background-image {
+    /* max-height: 980px;
+    max-width:auto; */
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: 0;
+    position: relative;
+    background-position: center center;
 }
 
 .btn {
-  margin: 10px;
-  font-family: Shrikhand, cursive;
-  color: #1da1f2;
-  background-color: white;
-  border-color: #1da1f2;
-  border-style: solid;
-  border-width: 2px;
+    margin: 10px;
+    font-family: Shrikhand, cursive;
+    color: #1da1f2;
+    background-color: white;
+    border-color: #1da1f2;
+    border-style: solid;
+    border-width: 2px;
 }
 
 p {
-  margin: 0;
-  font-size: 16px;
+    margin: 0;
+    font-size: 16px;
 }
 
 #reset-password {
-  background: #fff;
-  cursor: pointer;
-  margin-top: 20px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 #date {
-  text-align: center;
+    text-align: center;
 }
