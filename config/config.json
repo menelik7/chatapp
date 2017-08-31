@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Falcao15",
+    "password": "",
     "database": "speakup_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
