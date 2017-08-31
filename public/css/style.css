@@ -98,3 +98,161 @@ p {
 #date {
     text-align: center;
 }
+
+
+   body {}
+   /* .grayscale {
+       background-image: url("C:/users/Donny Gabai/test/images/people-coffee-tea-meeting.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       filter: gray;
+   } */
+
+   img {
+       height: auto;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-size: cover;
+       /*filter: grayscale(100%);*/
+       /*z-index: 0;*/
+       position: fixed;
+       background-position: center center;
+   }
+
+   .header {
+       position: absolute;
+       top: 20%;
+       Left: 10%;
+       z-index: 1;
+       font-family: 'Raleway', sans-serif;
+       /* color: #6666ff; */
+       /* color: #ffffff; */
+       color: #ff6868;
+       text-shadow: 2px, 3px white;
+   }
+
+   svg {
+       width: 80%;
+       height: auto;
+   }
+
+   nav,
+   ul,
+   a {
+       font-family: 'Raleway', sans-serif;
+       font-size: 30px;
+       color: #6666ff;
+   }
+   .nav-wrapper{
+
+   }
+   /* nav {
+       background-color: #ffffff;
+   } */
+
+   .typewriter {
+       position: absolute;
+       z-index: 0;
+      /* top: 85%;
+       left: 10%;*/
+       color: #ff6868;
+   }
+
+   #start {
+       text-align: center;
+       position: absolute;
+       top: 10%;
+       left: 10%;
+   }
+
+   #join {
+       text-align: center;
+       position: absolute;
+       top: 15%;
+       left: 10%;
+   }
+
+   .chatbox {
+       text-align: center;
+       position: absolute;
+       top: 10%;
+       left: 25%;
+       background-color: #ffffff;
+       height: 70%;
+       width: 50%;
+        //box-shadow: 3px 3px #404040;
+       border-radius: 10px;
+   }
+
+   .textbox {
+       position: absolute;
+       top: 83%;
+       left: 25%;
+       background-color: #ffffff;
+       height: 10%;
+       width: 50%;
+       /* box-shadow: 3px 3px #404040; */
+       border-radius: 10px;
+   }
+
+   h4 {
+       font-weight: bold;
+       position:0;
+   }
+
+   .chatrooms {
+       position: absolute;
+       top: 10%;
+       left: 77%;
+       background-color: #ffffff;
+       height: 40%;
+       width: 20%;
+        box-shadow: 3px 3px #404040;
+       border-radius: 10px;
+   }
+
+   .friendslist {
+       position: absolute;
+       top: 53%;
+       left: 77%;
+       background-color: #ffffff;
+       height: 40%;
+       width: 20%;
+        box-shadow: 3px 3px #404040;
+       border-radius: 10px;
+   }
+
+   .typewriter h4 {
+       overflow: hidden;
+       /* Ensures the content is not revealed until the animation */
+       border-right: .15em solid orange;
+       /* The typwriter cursor */
+       white-space: nowrap;
+       /* Keeps the content on a single line */
+       margin: 0 auto;
+       /* Gives that scrolling effect as the typing happens */
+       letter-spacing: .15em;
+       /* Adjust as needed */
+       animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+   }
+   /* The typing effect */
+
+   @keyframes typing {
+       from {
+           width: 0
+       }
+       to {
+           width: 100%
+       }
+   }
+   /* The typewriter cursor effect */
+
+   @keyframes blink-caret {
+       from,
+       to {
+           border-color: transparent
+       }
+       50% {
+           border-color: #ff6868;
+       }
+   }

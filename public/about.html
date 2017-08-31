@@ -1,10 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet " id="styles " type="text/css " href="css/style.css ">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Raleway|Inconsolata|Saira " rel="stylesheet ">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+		<style>
+		a{
+		text-decoration:none;
+		}
+		a{
+		font-size:40px;
+		color:#FFF;
+		transition: all 0.1s ease-in;
+		text-decoration:none;
+		}
+		a:hover{
+		-webkit-stroke-width: 5.3px;
+		-webkit-stroke-color: #FFFFFF;
+		-webkit-fill-color: #FFFFFF;
+		text-shadow: 1px 0px 5px blue;
+		}
+		h1{
+			background-color: black;
+			padding:8%;
+			border-radius: 10px;
+			padding-bottom: 6%;
+
+		}
+		#container {
+		       width: 500px;
+		       margin: auto;
+		       }
+		       /*Neon*/
+		       p {
+		       text-align: center;
+		       font-size: 7em;
+		       margin: 20px 0 20px 0;
+		       }
+		       a {
+		       text-decoration: none;
+		       -webkit-transition: all 0.5s;
+		       -moz-transition: all 0.5s;
+		       transition: all 0.5s;
+		       }
+		       p:nth-child(1) a {
+		       color: #fff;
+		       font-family: 'Raleway', sans-serif;
+		       -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+		       -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+		       animation: neon1 1.5s ease-in-out infinite alternate;
+		       }
+		       p:nth-child(1) a:hover {
+		       color: #FF1177;
+		       -webkit-animation: none;
+		       -moz-animation: none;
+		       animation: none;
+		       }
+		       p a:hover {
+		       color: #ffffff;
+		       }
+		       /*glow for webkit*/
+		       @-webkit-keyframes neon1 {
+		       from {
+		       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+		       }
+		       to {
+		       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+		       }
+		       }
+		       /*glow for mozilla*/
+		       @-moz-keyframes neon1 {
+		       from {
+		       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+		       }
+		       to {
+		       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+		       }
+		       }
+		       @keyframes neon1 {
+		       from {
+		       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+		       }
+		       to {
+		       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+		       }
+		       }
+		       @media (max-width: 650px) {
+		       #container {
+		       width: 100%;
+		       }
+		       p {
+		       font-size: 3.5em;
+		       }
+		       }
+		</style>
+		<title>Meet Team</title>
+	</head>
+	<body>
+
+		<img src="img/backStage2.jpg" alt="stage">
+		<nav>
+			<div class="nav-wrapper black" style="opacity:0.6;">
+				<a href="home.html" class="brand-logo"><i class="material-icons">lightbulb_outline</i>SpeakUp</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/">Home</a></li>
+					<li><a href="/chatroom">Chat Room</a></li>
+					<li><a href="/Technology">Technology</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- <ABOUT US> -->
+		<div id="container" style="position:relative;line-height:25px;">
+			<p><a href="">
+				BEHIND <br> THE <br> SCENE
+			</a></p>
+		</div>
+		<!-- <transition> -->
+
+
+		<div class="row" style="position: relative;margin-top: 3%;">
+					<div class="col s3">
+								<a href=""><h1 class="z-depth-2" style="color:white;font-size: 65%;text-align: center;margin-top:20%;"><img class="" src="img/donny.JPG" style="position: relative; width: 80%; padding-top:10%;">DONNY <br> GABAI <i class="material-icons">account_circle</i></h1></a>
+					</div>
+					<div class="col s3">
+								<a href=""><h1 class="z-depth-2" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/air.JPG" style="position: relative; width: 80%; padding-top:10%;">KAMOLTIP <br> CARDENAS <i class="material-icons">account_circle</i></h1></a>
+					</div>
+					<div class="col s3">
+								<a href=""><h1 class="z-depth-2" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/mike.JPG" style="position: relative; width: 80%; padding-top:10%;"> <br>MIKE <br> HASHIMOTO <i class="material-icons">account_circle</i></h1></a>
+					</div>
+					<div class="col s3">
+								<a href=""><h1 class="z-depth-2" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/menelik.JPG" style="position: relative; width: 80%; padding-top:10%;">MENELIK <br> TEFARA <i class="material-icons">account_circle</i></h1></a>
+					</div>
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+
+		</script>
+	</body>
 </html>
