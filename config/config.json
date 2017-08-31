@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "aair3830",
+    "database": "speakup_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "xk1wi4lok47z8d01",
+    "password": "m31pc69efunajq0g",
+    "database": "speakup_db",
+    "host": "ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
