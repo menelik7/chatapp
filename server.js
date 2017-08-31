@@ -1,13 +1,14 @@
-var app = require('express')();
+var app = express();
+// var app = express.createServer();
 var express = require('express');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var bodyParser = require('body-parser');
-var db = require("./app/models");
+var port = process.env.PORT || 3000;
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/models/index');
-});
+var db = require("../models");
+
+
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -28,8 +29,25 @@ io.on('connection', function(socket){
     io.emit('chat message', msg);
   });
 });
-  
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+//
+// http.listen(3000, function(){
+//   console.log('listening on *:3000');
+// });
+// var routes = require("./controllers/speakup_controller.js");
+// app.use("/", routes);
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+// app.get('/', function(req, res){
+//   res.sendFile(__dirname + '/models/index');
+// });
+
+
+db.sequelize.sync({ force:false }).then(function(){
+app.listen(port, function(){
+  console.log("listen to", port);
+});
 });

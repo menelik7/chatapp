@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var Message = require("../models/message.js");
+var Message = require("./models");
 
 
 // Routes
