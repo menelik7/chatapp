@@ -41,3 +41,7 @@ p {
   cursor: pointer;
   margin-top: 20px;
 }
+
+#date {
+  text-align: center;
+}

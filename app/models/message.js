@@ -11,9 +11,6 @@ var Message = sequelize.define("message", {
   author: {
     type: Sequelize.STRING
   },
-  password: {
-    type: Sequelize.STRING
-  },
   body: {
     type: Sequelize.STRING
   },
