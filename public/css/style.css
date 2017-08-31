@@ -6,14 +6,14 @@
 
 .cool-font {
     font-family: Shrikhand, cursive;
-    font-size: 24px;
-    color: #ffffff;
+    font-size: 34px;
+    color: #4db6ac;
 }
 
 .jumbotron {
     font-family: Shrikhand, cursive;
     color: white;
-    background-color: #1da1f2;
+    background-color: #4db6ac;
 }
 
 input,
@@ -61,6 +61,14 @@ textarea {
     display: inline-block;
 }
 
+#center-title {
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
 #background-image {
     /* max-height: 980px;
     max-width:auto; */
@@ -77,9 +85,9 @@ textarea {
 .btn {
     margin: 10px;
     font-family: Shrikhand, cursive;
-    color: #1da1f2;
+    color: #4db6ac;
     background-color: white;
-    border-color: #1da1f2;
+    border-color: #4db6ac;
     border-style: solid;
     border-width: 2px;
 }
@@ -113,6 +121,7 @@ p {
 
 .the-input {
     background: #ff6868;
+    height: 275px;
 }
 
 .typewriter {
