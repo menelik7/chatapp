@@ -107,9 +107,9 @@ $(document).ready(function() {
       }
         newMessage = {
           author: localStorage.getItem("username"),
-          password: password,
+          // password: password,
           body: $("#message-box").val().trim(),
-          created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+          // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
         };
         // console.log(newMessage);
         $.post("/api/new", newMessage);
