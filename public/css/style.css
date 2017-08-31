@@ -21,6 +21,15 @@ textarea {
     margin: 20px;
 }
 
+footer {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.footer-links {
+    text-align: center;
+}
+
 .icons {
     text-align: center;
     width: 375px;
