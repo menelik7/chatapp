@@ -4,12 +4,13 @@
 
 // Dependencies
 // =============================================================
-var Message = require("../models/message.js");
+// Require the Burger model
+var db = require("../models");
 
 
 // Routes
 // =============================================================
-module.exports = function(app, io) {
+module.exports = function(app) {
 
   // Get all messages
   app.get("/api/all", function(req, res) {
@@ -18,9 +19,9 @@ module.exports = function(app, io) {
     // Sequelize queries are aynchronous, which helps with percieved speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
-    Message.findAll({}).then(function(results) {
+    db.Message.findAll({}).then(function(dbMessage) {
       // results are available to us inside the .then
-      res.json(results);
+      res.json(dbMessage);
     });
 
   });
@@ -31,11 +32,9 @@ module.exports = function(app, io) {
     console.log("Message Data:");
     console.log(req.body);
 
-    Message.create({
+    db.Message.create({
       author: req.body.author,
-      password: req.body.password,
-      body: req.body.body,
-      created_at: req.body.created_at
+      body: req.body.body
     }).then(function(results) {
       // `results` here would be the newly created message
       res.end();

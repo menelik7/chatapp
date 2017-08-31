@@ -29,7 +29,7 @@
 
 module.exports = function(sequelize, DataTypes) {
   // Define the Message sequelize model
-  var Message = sequelize.define("message", {
+  var Message = sequelize.define("Message", {
     author: {
       type: DataTypes.STRING,
       allowNull: false

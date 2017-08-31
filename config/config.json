@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "burgers_db",
+    "password": "Falcao15",
+    "database": "speakup_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
