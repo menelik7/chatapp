@@ -128,7 +128,7 @@ $(document).ready(function() {
           }
           if(currentIndex > scale){
             scale = currentIndex;
-            row.append("<p><strong><span style='color:#ff0000'>" + data[currentIndex].author + "</span></strong>  " + moment(data[currentIndex].created_at).format("h:mma") +"</p>");
+            row.append("<p><strong><span style='color:#ff0000; font-size: 1.2em'>" + data[currentIndex].author + "</span></strong>  " + moment(data[currentIndex].created_at).format("h:mma") +"</p>");
             row.append("<p>" + msg + "</p>");
           }
         }
@@ -143,7 +143,7 @@ $(document).ready(function() {
       for (var i = 0; i < data.length; i++) {
         var row = $("<div>");
         row.addClass("message");
-        row.append("<p><strong>" + data[i].author + "</span></strong>  " + moment(data[i].created_at).format("h:mma") +"</p>");
+        row.append("<p><strong><span style='font-size: 1.2em'>" + data[i].author + "</span></strong> " + moment(data[i].created_at).format("h:mma") +"</p>");
         row.append("<p>" + data[i].body + "</p>");
         $("#message-area").prepend(row);
       }
