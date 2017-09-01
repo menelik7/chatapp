@@ -109,7 +109,7 @@ $(document).ready(function() {
           author: localStorage.getItem("username"),
           // password: password,
           body: $("#message-box").val().trim(),
-          // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+          time: moment().format("YYYY-MM-DD HH:mm:ss")
         };
         // console.log(newMessage);
         $.post("/api/new", newMessage);
@@ -128,8 +128,8 @@ $(document).ready(function() {
           }
           if(currentIndex > scale){
             scale = currentIndex;
-            row.append("<p><strong><span style='color:#ff0000; font-size: 1.2em'>" + data[currentIndex].author + "</span></strong>  " + moment().format("HH:mm") +"</p>");
-            row.append("<p>" + msg + "</p>");
+            row.append("<p><span style='color:#ff0000; font-size: 1.2em;'>" + data[currentIndex].author + "</span><span style='color: grey; font-size: .9em'> " + moment().format("HH:mm") +"</p>");
+            row.append(msg);
           }
         }
         $("#message-area").prepend(row);
@@ -143,8 +143,8 @@ $(document).ready(function() {
       for (var i = 0; i < data.length; i++) {
         var row = $("<div>");
         row.addClass("message");
-        row.append("<p><strong>" + data[i].author + "</strong> " + data[i].createdAt.substr(11, 5) +"</p>");
-        row.append("<p>" + data[i].body + "</p>");
+        row.append("<p><span style='font-size: 1.2em'>" + data[i].author + "</span><span style='color: grey; font-size: .9em'> " + data[i].time.substr(0, 5) +"</span></p>");
+        row.append(data[i].body);
         $("#message-area").prepend(row);
       }
     }

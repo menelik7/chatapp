@@ -37,6 +37,9 @@ module.exports = function(sequelize, DataTypes) {
     body: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    time: {
+      type: DataTypes.TIME
     }
   });
 

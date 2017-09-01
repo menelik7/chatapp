@@ -1,7 +1,10 @@
 .message {
+    font-size: 16px;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
     background-color: #e8f9ff;
+    border-radius: 5px;
+    word-wrap: break-word;
 }
 
 .cool-font {
@@ -9,22 +12,26 @@
     font-size: 34px;
     color: #4db6ac;
 }
-
+/*
 .jumbotron {
     font-family: Shrikhand, cursive;
     color: white;
     background-color: #4db6ac;
+}*/
+
+.room-name {
+    background: #ff6868;
+    height: 275px;
 }
 
-input,
-textarea {
-    margin: 20px;
+#center-title {
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #ffffff;
 }
 
-footer {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-}
 
 .footer-links {
     text-align: center;
@@ -70,14 +77,6 @@ footer {
     display: inline-block;
 }
 
-#center-title {
-    padding-top: 100px;
-    font-size: 50px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: #ffffff;
-}
-
 #background-image {
     /* max-height: 980px;
     max-width:auto; */
@@ -92,7 +91,8 @@ footer {
 }
 
 .btn {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: Shrikhand, cursive;
     color: #4db6ac;
     background-color: white;
@@ -103,7 +103,9 @@ footer {
 
 p {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 
 #reset-password {
@@ -113,6 +115,9 @@ p {
 }
 
 #date {
+    color: #7e827a;
+    font-weight: bold;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -156,6 +161,8 @@ p {
 }
 
 
+
+
 /* The typing effect */
 
 @keyframes typing {
@@ -179,3 +186,4 @@ p {
         border-color: #ff6868;
     }
 }
+

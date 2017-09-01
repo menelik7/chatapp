@@ -34,7 +34,8 @@ module.exports = function(app) {
 
     db.Message.create({
       author: req.body.author,
-      body: req.body.body
+      body: req.body.body,
+      time: req.body.time
     }).then(function(results) {
       // `results` here would be the newly created message
       res.end();
