@@ -20,7 +20,7 @@ module.exports = function(app) {
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
     db.Message.findAll({}).then(function(dbMessage) {
-      // results are available to us inside the .then
+      // results are available to us inside the .thenzz
       res.json(dbMessage);
     });
 

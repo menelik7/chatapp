@@ -60,7 +60,7 @@ $(document).ready(function() {
       $('#userName').val('');
       $('#email').val('');
       $('#password').val('');
-      // console.log(firebaseUser);
+      console.log(firebaseUser);
       login.classList.add('hide');
       chatroom.classList.remove('hide');
       //Display the user's name form our previously set local storage
@@ -107,7 +107,7 @@ $(document).ready(function() {
       }
         newMessage = {
           author: localStorage.getItem("username"),
-          password: password,
+          // password: password,
           body: $("#message-box").val().trim(),
           // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
         };
@@ -128,7 +128,7 @@ $(document).ready(function() {
           }
           if(currentIndex > scale){
             scale = currentIndex;
-            row.append("<p><strong><span style='color:#ff0000; font-size: 1.2em'>" + data[currentIndex].author + "</span></strong>  " + moment(data[currentIndex].created_at).format("h:mma") +"</p>");
+            row.append("<p><strong><span style='color:#ff0000; font-size: 1.2em'>" + data[currentIndex].author + "</span></strong>  " + moment().format("HH:mm") +"</p>");
             row.append("<p>" + msg + "</p>");
           }
         }
@@ -143,7 +143,7 @@ $(document).ready(function() {
       for (var i = 0; i < data.length; i++) {
         var row = $("<div>");
         row.addClass("message");
-        row.append("<p><strong><span style='font-size: 1.2em'>" + data[i].author + "</span></strong> " + moment(data[i].created_at).format("h:mma") +"</p>");
+        row.append("<p><strong>" + data[i].author + "</strong> " + data[i].createdAt.substr(11, 5) +"</p>");
         row.append("<p>" + data[i].body + "</p>");
         $("#message-area").prepend(row);
       }
