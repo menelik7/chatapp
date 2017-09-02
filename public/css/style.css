@@ -38,11 +38,11 @@ body {
 
 .room-name {
     background: #ff6868;
-    height: 275px;
+    height: 100px;
 }
 
 #center-title {
-    padding-top: 100px;
+    padding-top: 10px;
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -121,7 +121,7 @@ p {
 }
 
 #reset-password {
-    background: #fff;
+    font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
 }
