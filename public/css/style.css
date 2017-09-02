@@ -1,10 +1,33 @@
+body {
+    background: url("../img/concrete-texture.png");
+    margin: ;
+}
+
 .message {
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #e8f9ff;
+    background-color: #fff;
     border-radius: 5px;
     word-wrap: break-word;
+}
+
+#message-area {
+    max-height: 500px;
+    overflow-y: auto;    
+}
+
+#message-area::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+#message-area::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#message-area::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 .cool-font {
@@ -12,12 +35,6 @@
     font-size: 34px;
     color: #4db6ac;
 }
-/*
-.jumbotron {
-    font-family: Shrikhand, cursive;
-    color: white;
-    background-color: #4db6ac;
-}*/
 
 .room-name {
     background: #ff6868;
@@ -32,11 +49,6 @@
     color: #ffffff;
 }
 
-
-.footer-links {
-    text-align: center;
-}
-
 .icons {
     text-align: center;
     width: 375px;
@@ -49,6 +61,17 @@
     left: 60%;
     margin: 5px;
     padding: 5px;
+}
+
+.techIcon {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
 }
 
 .about {
@@ -66,20 +89,9 @@
     z-index: 1;
 }
 
-.techIcon {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
-    display: inline-block;
-}
-
 #background-image {
-    /* max-height: 980px;
-    max-width:auto; */
+    max-height: 980px;
+    max-width:auto; 
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
@@ -160,6 +172,19 @@ p {
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
 
+.footer-links {
+    padding-top: 5px;
+    text-align: center;
+}
+
+#copyright {
+    color: #fff;
+    font-size: .9em;
+}
+footer {
+    height: 80px;
+    font-size: 1em;
+}
 
 
 
