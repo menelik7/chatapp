@@ -1,91 +1,123 @@
 <!DOCtype html>
 <html>
-
-<head>
-    <title>SpeakUp</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet " id="styles " type="text/css " href="css/style1.css ">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Raleway|Inconsolata|Saira " rel="stylesheet ">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-</head>
-
-<body>
-<img id="background-image" src="img/lab.jpg" alt="stage">
-    <nav>
-        <div class="nav-wrapper black">
-            <a href="/" style="font-size:120%;color:white;float:left;text-indent:10px;">Speak</a>
-            <a href="/" class="brand-logo"><img src="img/whatup.svg" style="width:22%;"></a>
-
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/">home</a></li>
-                <li><a href="/about">about us</a></li>
-                <li><a href="/technology">technology</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class=""></div>
-
-
+	<head>
+		<title>SpeakUp</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet " id="styles " type="text/css " href="css/style1.css ">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Raleway|Inconsolata|Saira " rel="stylesheet ">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<img id="background-image" src="img/mount.jpg" alt="stage">
+		<nav>
+			<div class="nav-wrapper black" style="opacity:0.75;">
+				<a href="/" style="font-size:120%;color:white;float:left;text-indent:10px;">Speak</a>
+				<a href="/" class="brand-logo"><img src="img/whatup.svg" style="width:22%;"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/">home</a></li>
+					<li><a href="/about">about us</a></li>
+					<li><a href="/technology">technology</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class=""></div>
 		<div id="container" style="position:relative;line-height:25px;">
-					<p><a href="/about">
-						BEHIND <br> THE <br> SCENE
-					</a></p>
-
-					<img src="" alt="">
-				</div>
-
-
+			<p id="behind"><a href="/about">
+				BEHIND <br> THE <br> SCENE
+			</a></p>
+		</div>
 		<!-- <h5 class="text-align left" style="position:absolute;">Meet Us</h5> -->
-	 <div class="space"></div>
-
-
-
-
-				<!-- <transition> -->
-				<div class="col hide-on-small-only m3 l2">
-				 <ul class="section table-of-contents">
-					 <!-- <li><a href="#meetus">Meet us</a></li> -->
-				 </ul>
- 			 </div>
-					<div id="meetus" class="section scrollspy">
-
-				<div class="row content" id="meetUs" style="position:relative;">
-					<div class="row" style="position: relative;margin-top: 2%;">
-								<div class="col s3">
-											<a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top:20%;"><img class="" src="img/donny.JPG" style="position: relative; width: 100%;">DONNY <br> GABAI <br> <i class="material-icons">account_circle</i></h1></a>
-								</div>
-								<div class="col s3">
-											<a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/air.JPG" style="position: relative; width: 100%;">KAMOLTIP <br> CARDENAS <br><i class="material-icons">account_circle</i></h1></a>
-								</div>
-								<div class="col s3">
-											<a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/mike.JPG" style="position: relative; width: 100%;"> <br>MIKE <br> HASHIMOTO <br><i class="material-icons">account_circle</i></h1></a>
-								</div>
-								<div class="col s3">
-											<a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/menelik.JPG" style="position: relative; width: 100%;">MENELIK <br> TEFERA <br> <i class="material-icons">account_circle</i></h1></a>
-								</div>
+		<!-- <div class="space"></div> -->
+		<div id="headFooter">
+			<div class="col s12"></div>
+			<a href="#introduction"><img class="circle" id="triangle" src="https://68.media.tumblr.com/3ede00c80b9272e678006cefdfc375a8/tumblr_nuguq9zwi61raievko1_500.gif" alt="triangle"></a>
+			<div class="padding"></div>
+		</div>
+		<p id="hello" class="text text-align center">HELLO WORLD</p>
+		<!-- <Cards> -->
+		<div class="row" style="position: relative;">
+			<div id="introduction" class="section scrollspy"></div>
+			<div class="col s3">
+				<div class="card">
+					<div class="card-image">
+						<img src="img/donny.JPG">
+						<span class="card-title black-text">DONNY <br> GABAI </span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">account_circle</i></a>
 					</div>
+					<div class="card-content">
+						<h6>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
 					</div>
-						</div>
-			     </div>
-			     <div class="col hide-on-small-only m3 l2">
-			       <ul class="section table-of-contents">
-			         <li><a href="#meetUs">MEET US</a></li>
+				</div>
+				<!-- <a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top:20%;"><img class="" src="img/donny.JPG" style="position: relative; width: 100%;">DONNY <br> GABAI <br> <i class="material-icons">account_circle</i></h1></a> -->
+			</div>
+			<div class="col s3">
+				<div class="card">
+					<div class="card-image">
+						<img src="img/air.JPG">
+						<span class="card-title black-text" head 6 black-text>KAMOLTIP CARDENAS</span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">account_circle</i></a>
+					</div>
+					<div class="card-content">
+						<h6>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+					</div>
+				</div>
+				<!-- <a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/air.JPG" style="position: relative; width: 100%;">KAMOLTIP <br> CARDENAS <br><i class="material-icons">account_circle</i></h1></a> -->
+			</div>
+			<div class="col s3">
+				<div class="card">
+					<div class="card-image">
+						<img src="img/mike.JPG">
+						<span class="card-title black-text">MIKE <br> HASHIMOTO</span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">account_circle</i></a>
+					</div>
+					<div class="card-content">
+						<h6>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+					</div>
+				</div>
+				<!-- <a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/mike.JPG" style="position: relative; width: 100%;"> <br>MIKE <br> HASHIMOTO <br><i class="material-icons">account_circle</i></h1></a> -->
+			</div>
+			<div class="col s3">
+				<div class="card">
+					<div class="card-image">
+						<img src="img/menelik.JPG">
+						<span class="card-title black-text">MENELIK <br> TEFERA </span>
+						<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">account_circle</i></a>
+					</div>
+					<div class="card-content">
+						<h6>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+					</div>
+				</div>
+				<!-- <a href=""><h1 class="z-depth-2 z" style="color:white;font-size: 65%;text-align: center;margin-top: 20%;"><img class="" src="img/menelik.JPG" style="position: relative; width: 100%;">MENELIK <br> TEFERA <br> <i class="material-icons">account_circle</i></h1></a> -->
+			</div>
+		</div>
+	</div>
+	<!-- 					  <div class="row">
+		<div class="col s12 m6">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/sample-1.jpg">
+					<span class="card-title">Card Title</span>
+					<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	
+</div>
 
-			       </ul>
-			     </div>
-			   </div>
-
-				 <script>
-				 $(document).ready(function(){
-				 $('.scrollspy').scrollSpy();
- });
-
-				 </script>
-
+<script>
+	$(document).ready(function(){
+	$('.scrollspy').scrollSpy();
+});
+$(document).ready(function(){
+$('.carousel').carousel();
+});
+</script>
 </body>
-
 </html>
